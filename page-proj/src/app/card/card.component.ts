@@ -20,4 +20,12 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  adicionar(){
+    this.produtos.push("mousepad")
+  }
+
+  remover(){
+    this.produtos.pop()
+  }
+
 }

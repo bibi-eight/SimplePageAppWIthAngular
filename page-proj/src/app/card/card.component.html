@@ -1,7 +1,10 @@
 <h1>My App</h1>
 <p >card works!</p>
-<button> hello world </button>
+<h3> hello world </h3>
 
 <ul>
-    <li></li>
+    <li *ngFor="let p of produtos"> {{ p }} </li>
+    <br>
+    <button (click) = "adicionar()"> Adicionar </button>
+    <button (click) = "remover()"> Remover </button>
 </ul>
