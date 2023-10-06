@@ -11,3 +11,27 @@
     <br>
     <button (click) = "adicionar()"> Adicionar </button>
 </ul>
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchCase = "'user'">
+        <ul>
+            <li> Editar perfil </li>
+            <li> Adicionar Cartão </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase = "'admin'">
+        <ul>
+            <li> Adicionar perfil </li>
+            <li> Editar perfil </li>
+            <li> Gerenciar usuarios </li>
+        </ul>
+    </div>
+    <div *ngSwitchCase = "'superUser'">
+        <ul>
+            <li> Adicionar perfil </li>
+            <li> Editar perfil </li>
+            <li> Gerenciar usuarios </li>
+            <li> Gerenciar admins </li>
+        </ul>
+    </div>
+</div>
