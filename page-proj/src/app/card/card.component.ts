@@ -24,8 +24,8 @@ export class CardComponent implements OnInit {
     this.produtos.push("mousepad")
   }
 
-  remover(){
-    this.produtos.pop()
+  remover(index: number){
+    this.produtos.splice(index, 1)
   }
 
 }
