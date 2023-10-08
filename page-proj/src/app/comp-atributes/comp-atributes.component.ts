@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CompAtributesComponent implements OnInit 
 {
   estilo: string = "enable"
+  corFundo: string = "#8a8ae7"
+
   constructor() { }
 
   ngOnInit(): void { }
