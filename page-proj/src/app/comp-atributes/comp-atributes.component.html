@@ -3,7 +3,16 @@
 <h1 [ngStyle] = "{'background': corFundo}"> Curso angular</h1>
 
 <h2>Lista de compras</h2>
+
 <p>Adicione um item na sua lista</p>
+
 <input type = "text" [(ngModel)] = "item">
+
 <button (click)="adicionarItem()">Adicionar</button>
+
 <p>{{item}}</p>
+
+<ul>
+    <li *ngFor="let elemento of lista, let i = index"
+    (click) = "removerItem(i)"> {{ elemento }}</li>
+</ul>

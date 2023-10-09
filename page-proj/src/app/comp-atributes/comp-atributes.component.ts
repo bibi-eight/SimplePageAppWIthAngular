@@ -18,6 +18,11 @@ export class CompAtributesComponent implements OnInit
   {
     this.lista.push(this.item)
   }
+
+  removerItem(index: number)
+  {
+    this.lista.splice(index, 1)
+  }
   
   ngOnInit(): void { }
 
