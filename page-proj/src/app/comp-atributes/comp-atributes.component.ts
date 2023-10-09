@@ -9,9 +9,16 @@ export class CompAtributesComponent implements OnInit
 {
   estilo: string = "enable"
   corFundo: string = "#8a8ae7"
+  item: string = ""
+  lista: string[] = []
 
   constructor() { }
 
+  adicionarItem()
+  {
+    this.lista.push(this.item)
+  }
+  
   ngOnInit(): void { }
 
   Change()
