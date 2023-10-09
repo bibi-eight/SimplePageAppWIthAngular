@@ -11,6 +11,7 @@ export class CompAtributesComponent implements OnInit
   corFundo: string = "#8a8ae7"
   item: string = ""
   lista: string[] = []
+  isEnableBlock: boolean = true
 
   constructor() { }
 

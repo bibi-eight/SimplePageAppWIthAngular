@@ -16,3 +16,9 @@
     <li *ngFor="let elemento of lista, let i = index"
     (click) = "removerItem(i)"> {{ elemento }}</li>
 </ul>
+
+<hr>
+<ng-template [ngIf] = "isEnableBlock">
+    <a href = "#"> Adicionar</a>
+</ng-template>
+<hr>
