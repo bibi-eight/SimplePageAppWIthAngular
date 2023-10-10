@@ -1,24 +1,26 @@
-<p [ngClass]="estilo">comp-atributes works!</p>
-<button class = "buttonChangeColor" (click)="Change()">Change</button>
-<h1 [ngStyle] = "{'background': corFundo}"> Curso angular</h1>
-
-<h2>Lista de compras</h2>
+<h2>Lista de Afazeres</h2>
 
 <p>Adicione um item na sua lista</p>
+
+<p [ngClass]="estilo">To Do!</p>
 
 <input type = "text" [(ngModel)] = "item">
 
 <button (click)="adicionarItem()">Adicionar</button>
 
-<p>{{item}}</p>
+<p> {{item}}</p>
 
 <ul>
-    <li *ngFor="let elemento of lista, let i = index"
+    <li *ngFor="let elemento  of lista, let i = index"
     (click) = "removerItem(i)"> {{ elemento }}</li>
 </ul>
 
+<button class = "buttonChangeColor" (click)="Change()">Check</button>
+
+
+
 <hr>
 <ng-template [ngIf] = "isEnableBlock">
-    <a href = "#"> Adicionar</a>
+    <a href = "#"> By Brenda Brito</a>
 </ng-template>
 <hr>

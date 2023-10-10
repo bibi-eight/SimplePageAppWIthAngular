@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class CardComponent implements OnInit {
   produtos: string[] = []
   menuType: string = ""
-  
+  corFundo: string = "#8a8ae7"
+
   constructor() { 
     this.produtos = [
       "mouse",

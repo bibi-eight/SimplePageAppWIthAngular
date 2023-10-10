@@ -1,9 +1,9 @@
-<app-comp-atributes></app-comp-atributes>
-
 <app-card *ngIf = "isAliveCard; else anotherBlock"></app-card>
 
 <ng-template #anotherBlock>
     <p>ola sou um bloco secreto</p>
 </ng-template>
+
+<app-comp-atributes></app-comp-atributes>
 
 <router-outlet></router-outlet>
